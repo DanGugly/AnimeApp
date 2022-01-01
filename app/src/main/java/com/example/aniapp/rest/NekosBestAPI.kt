@@ -1,7 +1,7 @@
 package com.example.aniapp.rest
 
-import com.example.aniapp.model.NekoGif
-import com.example.aniapp.model.Nekos
+import com.example.aniapp.model.NekoBestModels.NekoGif
+import com.example.aniapp.model.NekoBestModels.Nekos
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -10,6 +10,9 @@ import retrofit2.http.Query
 /**
  * https://docs.nekos.best/info/endpoints
  * Network API for first interface
+ *
+ * 2 Seperate functions are used because they return different objects
+ * Nekos & NekoGif
  */
 interface NekosBestAPI {
 

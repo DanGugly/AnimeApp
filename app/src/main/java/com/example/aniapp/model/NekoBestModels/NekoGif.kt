@@ -1,4 +1,4 @@
-package com.example.aniapp.model
+package com.example.aniapp.model.NekoBestModels
 
 
 import com.google.gson.annotations.SerializedName
