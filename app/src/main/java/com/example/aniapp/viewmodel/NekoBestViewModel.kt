@@ -26,7 +26,7 @@ class NekoBestViewModel(
             try {
                 val response = nekosBestAPI.getNekos()
                 response.body()?.let {
-                    _allNekos.postValue(UIState.SUCCESS_NEKOS(listOf(it)))
+                    _allNekos.postValue(UIState.SUCCESSNEKOS(listOf(it)))
                 } ?: _allNekos.postValue(UIState.ERROR(Throwable("Response is null")))
 
             } catch (e : Exception){
@@ -40,7 +40,7 @@ class NekoBestViewModel(
             try {
                 val response = nekosBestAPI.getGifs()
                 response.body()?.let {
-                    _allNekoGifs.postValue(UIState.SUCCESS_NEKOSGIF(listOf(it)))
+                    _allNekoGifs.postValue(UIState.SUCCESSNEKOSGIF(listOf(it)))
                 } ?: _allNekoGifs.postValue(UIState.ERROR(Throwable("Response is null")))
             } catch (e : Exception){
                 _allNekoGifs.postValue(UIState.ERROR(e))
