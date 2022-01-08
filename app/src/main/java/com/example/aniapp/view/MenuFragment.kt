@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.aniapp.R
 import com.example.aniapp.databinding.FragmentMenuBinding
+import com.example.aniapp.utils.switchFragments
 
 class MenuFragment : Fragment() {
 
@@ -18,7 +18,12 @@ class MenuFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        binding.nekosButton.setOnClickListener {
+            switchFragments(parentFragmentManager, NekosFragment.newInstance())
+        }
+        binding.nekosGifs.setOnClickListener {
+            switchFragments(parentFragmentManager, NekoGifsFragment.newInstance())
+        }
         return binding.root
     }
 
