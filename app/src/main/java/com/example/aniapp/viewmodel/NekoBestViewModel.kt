@@ -20,12 +20,14 @@ class NekoBestViewModel(
     val allNekoGifsObserver : LiveData<UIState> get() = _allNekoGifs
 
     fun subscribeToNekos(){
+        collectNekosData()
         launch{
             nekosBestRepo.getNekos()
         }
     }
 
     fun subscribeToNekoGifs() {
+        collectNekoGifsData()
         launch{
             nekosBestRepo.getNekoGifs()
         }
