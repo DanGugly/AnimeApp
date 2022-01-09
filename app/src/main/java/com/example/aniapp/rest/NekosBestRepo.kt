@@ -26,7 +26,7 @@ class NekosBestRepoImpl(
             val response = nekosBestAPI.getGifs()
             if (response.isSuccessful){
                 response.body()?.let {
-                    _allNekoGifs.value = UIState.SUCCESSNEKOSGIF(listOf(it))
+                    _allNekoGifs.value = UIState.SUCCESSNEKOSGIF(it.url)
                 } ?: run {_allNekoGifs.value = UIState.ERROR(Throwable("Response is null")) }
             }else{
                 _allNekoGifs.value = UIState.ERROR(Exception(response.errorBody()?.string()))
@@ -41,7 +41,7 @@ class NekosBestRepoImpl(
             val response = nekosBestAPI.getNekos()
             if (response.isSuccessful){
                 response.body()?.let {
-                    _allNekos.value = UIState.SUCCESSNEKOS(listOf(it))
+                    _allNekos.value = UIState.SUCCESSNEKOS(it.url)
                 } ?: run {_allNekos.value = UIState.ERROR(Throwable("Response is null")) }
             }else{
                 _allNekos.value = UIState.ERROR(Exception(response.errorBody()?.string()))

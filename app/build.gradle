@@ -41,8 +41,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
 
-    //Picasso
-    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Glide for images
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
 
     //Koin
     implementation "org.koin:koin-android:2.0.1"
