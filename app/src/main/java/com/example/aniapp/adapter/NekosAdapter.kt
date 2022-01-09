@@ -53,8 +53,8 @@ class NekosViewHolder(
             .placeholder(R.drawable.glide_ph)
             .error(R.drawable.glide_err)
             .fallback(R.drawable.glide_fallback)
-            .override(500, 500)
-            .centerCrop()
+            .override(2000, 2150)
+            .fitCenter()
             .into(nekoImage)
     }
 }
