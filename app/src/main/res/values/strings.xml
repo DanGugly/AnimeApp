@@ -9,6 +9,7 @@
     <string name="https_www_pixiv_net_en_artworks_78594095">https://www.pixiv.net/en/artworks/78594095</string>
     <string name="image">image</string>
     <string name="gif">gif</string>
+    <string name="anime_app">ANIME APP</string>
     <string-array name="gifs_array">
         <item>baka</item>
         <item>bite</item>

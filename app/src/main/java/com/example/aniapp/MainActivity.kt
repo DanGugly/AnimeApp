@@ -1,24 +1,23 @@
 package com.example.aniapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import com.example.aniapp.databinding.ActivityMainBinding
 import com.example.aniapp.view.MenuFragment
 
 class MainActivity : AppCompatActivity() {
 
-    private val binding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.frag_container, MenuFragment.newInstance())
-            .addToBackStack(null)
-            .commit()
+        supportActionBar?.hide()
+        Handler().postDelayed({
+            val intent = Intent(this@MainActivity,HomeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }, 1250)
     }
 }
