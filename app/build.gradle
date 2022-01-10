@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -40,6 +41,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+
+    //Room Database
+    implementation("androidx.room:room-runtime:2.4.0")
+    kapt("androidx.room:room-compiler:2.4.0")
+    //Coroutines impl with room
+    implementation "androidx.room:room-ktx:2.4.0"
 
     //Glide for images
     implementation 'com.github.bumptech.glide:glide:4.9.0'
