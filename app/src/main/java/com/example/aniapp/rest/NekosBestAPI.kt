@@ -51,7 +51,7 @@ interface NekosBestAPI {
         private const val POUT = "pout"
         private const val SHRUG = "shrug"
         private const val SLAP = "slap"
-        private const val SLEEP = "SLEEP"
+        private const val SLEEP = "sleep"
         private const val SMILE = "smile"
         private const val SMUG = "smug"
         private const val STARE = "stare"

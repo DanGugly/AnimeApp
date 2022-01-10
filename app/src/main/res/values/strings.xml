@@ -1,7 +1,42 @@
 <resources>
     <string name="app_name">AniApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="view_nekos">View Nekos</string>
     <string name="view_gifs">View Gifs</string>
+    <string name="anime_name">Anime Name</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="https_www_pixiv_net_en_users_9077832">https://www.pixiv.net/en/users/9077832</string>
+    <string name="https_www_pixiv_net_en_artworks_78594095">https://www.pixiv.net/en/artworks/78594095</string>
+    <string name="image">image</string>
+    <string name="gif">gif</string>
+    <string-array name="gifs_array">
+        <item>baka</item>
+        <item>bite</item>
+        <item>blush</item>
+        <item>bored</item>
+        <item>cry</item>
+        <item>cuddle</item>
+        <item>dance</item>
+        <item>facepalm</item>
+        <item>feed</item>
+        <item>happy</item>
+        <item>highfive</item>
+        <item>hug</item>
+        <item>kiss</item>
+        <item>laugh</item>
+        <item>pat</item>
+        <item>poke</item>
+        <item>pout</item>
+        <item>shrug</item>
+        <item>slap</item>
+        <item>sleep</item>
+        <item>smile</item>
+        <item>smug</item>
+        <item>stare</item>
+        <item>think</item>
+        <item>thumbsup</item>
+        <item>tickle</item>
+        <item>wave</item>
+        <item>wink</item>
+    </string-array>
 </resources>
