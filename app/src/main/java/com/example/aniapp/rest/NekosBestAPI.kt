@@ -31,7 +31,7 @@ interface NekosBestAPI {
         var GIF_CATEGORY = ""
         const val BASE_URL = "https://nekos.best/api/v2/"
         private const val AMOUNT = 20
-        private const val NEKOS = "nekos"
+        private const val NEKOS = "neko"
         private const val BAKA = "baka"
         private const val BITE = "bite"
         private const val BLUSH = "blush"

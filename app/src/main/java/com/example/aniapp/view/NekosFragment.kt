@@ -1,13 +1,12 @@
 package com.example.aniapp.view
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.aniapp.R
 import com.example.aniapp.adapter.NekosAdapter
 import com.example.aniapp.databinding.FragmentNekosBinding
 import com.example.aniapp.utils.UIState
@@ -53,7 +52,7 @@ class NekosFragment : Fragment() {
             }
             is UIState.SUCCESSNEKOS -> {
                 binding.loading.isRefreshing = false
-                nekosAdapter.setNekos(uiState.nekos)
+                uiState.nekos?.let { nekosAdapter.setNekos(it) }
             }
             is UIState.ERROR -> {
                 binding.loading.isRefreshing = false
