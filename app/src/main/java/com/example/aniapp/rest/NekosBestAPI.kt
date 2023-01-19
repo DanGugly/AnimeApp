@@ -29,7 +29,7 @@ interface NekosBestAPI {
 
     companion object{
         var GIF_CATEGORY = ""
-        const val BASE_URL = "https://nekos.best/api/v1/"
+        const val BASE_URL = "https://nekos.best/api/v2/"
         private const val AMOUNT = 20
         private const val NEKOS = "nekos"
         private const val BAKA = "baka"
